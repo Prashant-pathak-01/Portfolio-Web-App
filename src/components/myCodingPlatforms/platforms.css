@@ -1,0 +1,42 @@
+.platforms{
+    height: 200px;
+    width: 160px;
+    margin: 40px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.platforms > img{
+    align-items: center;
+    height: 140px;
+    width: 140px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+
+.platforms > h2{
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: var(--text-color-a);
+}
+
+.platforms:hover{
+    transform: scale(1.2);
+    
+}
+
+@media (max-width:700px) {
+    .platforms{
+        margin: 0px;
+    }
+
+    .platforms >img{
+        height: 100px;
+        width: 100px;
+    }
+}

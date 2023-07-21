@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #78a2aa;
+    --theme-button-bg-img: url(./images/dark-mode-img.png);
+    --aboutMe-developer-img: url(./images/developer-img-light.svg);
+    --theme-button-bg-size : 25px 25px;
+    --theme-button-bg-margin : 5px;
+    --theme-button-bg-color:rgba(237, 242, 245, 0.553);
+    --text-color-a: rgb(3, 41, 82);
+    --border-color: rgba(209, 131, 209, 0.545);
+    --boxes-color: rgba(121, 203, 218, 0.9);
+    --header-bg-color: rgba(115, 158, 201, 0.975);
+
+
+
+    
+  }
+  :root.dark {
+    --primary-color: rgb(2, 30, 47);
+    --theme-button-bg-img: url(./images/light-mode-img.png);
+    --aboutMe-developer-img: url(./images/developer-img-dark.svg);
+    --theme-button-bg-color:rgba(182, 214, 234, 0.073);
+    --theme-button-bg-size : 35px 35px;
+    --theme-button-bg-margin : 0px;
+    --text-color-a: rgb(231, 237, 242);
+    --border-color: rgb(95, 65, 114);
+    --boxes-color: rgba(22, 94, 125, 0.333);
+    --header-bg-color: rgba(32, 49, 75, 0.975);
+
+  }
+  
+  body {
+    transition: 0.5s;
+    background-color: var(--primary-color);
+  }

@@ -1,0 +1,24 @@
+.mySkills{
+    height: 120px;
+    width: 120px;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.mySkills:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(64, 32, 153, 0.527);
+    background-color: var(--border-color);
+}
+
+
+@media (max-width:768px) {
+    .mySkills{
+        margin: 5px;
+    }
+}

@@ -1,0 +1,81 @@
+.contactMe {
+    max-width: 520px;
+    margin: 80px auto 80px auto;
+    padding: 40px;
+    background-color: var(--boxes-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    font-family: Arial, sans-serif;
+
+  }
+
+  .contactMe > h1{
+    color: var(--text-color-a);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .contactMe form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactMe label {
+    padding-top: 20px;
+    color: var(--text-color-a);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .contactMe input,
+  .contactMe textarea {
+    padding: 15px;
+    margin-bottom: 10px;
+    color: var(--text-color-a);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--theme-button-bg-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline-color: var(--border-color);
+  }
+
+  .contactMe textarea {
+    resize: vertical;
+  }
+
+  .contactMe input[type="submit"] {
+    background-color: var(--border-color);
+    transition: 0.5s;
+    color: var(--text-color-a);
+    border-radius: 7px;
+    border: 1px solid var(--primary-color);
+    padding: 20px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 220px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+
+  .contactMe input[type="submit"]:hover {
+    background-color: var(--primary-color);
+  }
+
+@media (max-width:700px) {
+    .contactMe {
+        max-width: 300px;
+        margin: 150px -20px 150px 30px;
+        padding: 30px;
+        background-color: var(--boxes-color);
+        border-radius: 10px;
+        box-shadow: 5px 5px 7px ;
+        font-family: Arial, sans-serif;
+    
+      }
+}
