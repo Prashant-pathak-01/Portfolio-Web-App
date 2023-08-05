@@ -3,6 +3,7 @@ import './projects.css';
 import MyProject from'./MyProjects/myProject';
 import PortfolioWebAppProject from '../images/portfolio_web_app_project.png'
 import GenerateQrProject from '../images/generateQr_project.png'
+import TodoProject from '../images/todo_web_app_project.png'
 function projects() {
   return (
     <div className='projects'>
@@ -10,6 +11,7 @@ function projects() {
       <div className='project_list'>
         <a href='#'><MyProject img={PortfolioWebAppProject} topic="Portfolio Web App" domain="Web Application"></MyProject></a>
         <a href='https://generateqr-project.netlify.app/' target='_blank'><MyProject img={GenerateQrProject} topic="GenerateQr Web App" domain="Web Application"></MyProject></a>
+        <a href='https://todo-list-webapp-project.netlify.app/' target='_blank'><MyProject img={TodoProject} topic="To do Web App" domain="Web Application"></MyProject></a>
 
       </div>
     </div>
