@@ -1,8 +1,11 @@
 import React from 'react'
 import './mySkills.css'
-function mySkills({bgimg}) {
+function mySkills({bgimg,name}) {
   return (
-    <div className='mySkills' style={{backgroundImage: `url(${bgimg})`}}></div>
+    <div className='mySkills'>
+      <div className='mySkillsIcon' style={{backgroundImage: `url(${bgimg})`}}></div>
+      <p className='mySkillsName'>{name}</p>
+    </div>
   )
 }
 
