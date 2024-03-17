@@ -83,6 +83,7 @@
     text-decoration: none;
     list-style:circle;
     margin: 20px;
+    color:var(--text-color-a);
 }
 .Experience li{
     padding: 6px;
@@ -95,6 +96,8 @@
     text-decoration: none;
     font-family:monospace;
     font-size: 14px;
+    color:rgb(245, 56, 56);
+
 }
 
 @media (max-width:700px){

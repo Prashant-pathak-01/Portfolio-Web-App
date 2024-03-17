@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fa85d65.css",
+    "main.js": "/static/js/main.b954c90f.js",
+    "static/media/HMSS.png": "/static/media/HMSS.69833eacbdf9677dc82c.png",
+    "static/media/todo_web_app_project.png": "/static/media/todo_web_app_project.304d6bb8674630cd78bc.png",
+    "static/media/Nodejs.png": "/static/media/Nodejs.e03a74dbe44bb2dd9e9c.png",
+    "static/media/firebase.png": "/static/media/firebase.5aa7cf22cd45ec6bbec2.png",
+    "static/media/postman.png": "/static/media/postman.448970aaff905299f6f3.png",
+    "static/media/portfolio_web_app_project.png": "/static/media/portfolio_web_app_project.094443b0c76257a1af69.png",
+    "static/media/Chatter.png": "/static/media/Chatter.2ce22d48f88951a8d2f5.png",
+    "static/media/html.png": "/static/media/html.fb627e76c05a9a6c7444.png",
+    "static/media/css.png": "/static/media/css.ea63097553654f07d95c.png",
+    "static/media/developer-img-light.svg": "/static/media/developer-img-light.d0420a2f5e5e2fa1416f.svg",
+    "static/media/generateQr_project.png": "/static/media/generateQr_project.c753f1c7658792879cd4.png",
+    "static/media/shareMe_project.png": "/static/media/shareMe_project.efe0dc343b847fd9ee1b.png",
+    "static/media/VScode.png": "/static/media/VScode.042e0e2b0626bf477528.png",
+    "static/media/java.png": "/static/media/java.5d5cffa04d820ba0644c.png",
+    "static/media/codechef.png": "/static/media/codechef.8407a9487fb0000999d2.png",
+    "static/media/reactjs.png": "/static/media/reactjs.283bf42c605cfc49cf49.png",
+    "static/media/github_round.png": "/static/media/github_round.256ce0fd9bfe85d7bb3c.png",
+    "static/media/c.png": "/static/media/c.83dfa097dfa94f707a41.png",
+    "static/media/cpp.png": "/static/media/cpp.1240ce157b70fb399c6c.png",
+    "static/media/leetcode.png": "/static/media/leetcode.29c45d44e16ac7b89d59.png",
+    "static/media/developer-img-dark.svg": "/static/media/developer-img-dark.3f07bd13e2bd324f8746.svg",
+    "static/media/tailwind.png": "/static/media/tailwind.fc2637ede3625ea04c74.png",
+    "static/media/Javascript.png": "/static/media/Javascript.b96a3d11fd578e5ce7bd.png",
+    "static/media/gfg.png": "/static/media/gfg.1ae69eb02581099d5ef3.png",
+    "static/media/logo1.jpg": "/static/media/logo1.3dc0470bdfb2dbf11350.jpg",
+    "static/media/Python.png": "/static/media/Python.ce5a497fc954b4987fa6.png",
+    "static/media/codeforces.png": "/static/media/codeforces.06c80e5e92aa23434775.png",
+    "static/media/express-js.png": "/static/media/express-js.9b344d7469dbbdc76754.png",
+    "index.html": "/index.html",
+    "main.7fa85d65.css.map": "/static/css/main.7fa85d65.css.map",
+    "main.b954c90f.js.map": "/static/js/main.b954c90f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fa85d65.css",
+    "static/js/main.b954c90f.js"
+  ]
+}
