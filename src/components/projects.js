@@ -8,6 +8,7 @@ import ChatterProject from "../images/Chatter.png";
 import HospitalManagementProject from "../images/HMSS.png";
 import FileSharingProject from "../images/shareMe_project.png";
 import JobJunctionProject from "../images/jobJunction.png";
+import ByteBattle from "../images/ByteBattle.png";
 
 function projects() {
   return (
@@ -66,6 +67,13 @@ function projects() {
           <MyProject
             img={JobJunctionProject}
             topic="Job-Junction"
+            domain="Web Application"
+          ></MyProject>
+        </a>
+        <a href="https://bytebattle.netlify.app/" target="_blank">
+          <MyProject
+            img={ByteBattle}
+            topic="ByteBattle"
             domain="Web Application"
           ></MyProject>
         </a>

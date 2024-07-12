@@ -3,7 +3,7 @@ import "./aboutMe.css";
 function aboutMe() {
   function resumeDownload() {
     window.open(
-      "https://drive.google.com/file/d/1TteA_4WVZi69p_ABr4HVTjJSFvOvEfyy/view?usp=sharing",
+      "https://drive.google.com/file/d/183tAQaakSub-KIPzeZcTDFqC6hB9IVRd/view?usp=sharing",
       "_blank"
     );
   }
