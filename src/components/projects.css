@@ -19,10 +19,12 @@
 }
 
 .project_list{
+    margin: 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 100px;
 }
 
 .project_list > a{
@@ -30,12 +32,14 @@
 }
 
 @media (max-width:700px) {
-    .projects{
-        margin-left: 10px;
-        margin-right: -30px;
-    }
+    .projects   {
+        width: auto;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 20px;
+    } 
 
     .project_list{
-        margin: -10px;
+        gap: 10px;
     }
 }

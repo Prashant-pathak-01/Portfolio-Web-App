@@ -8,6 +8,7 @@ import CodingPlatforms from './components/codingPlatforms';
 import Footer from './components/footer';
 import ContactMe from './components/contactMe';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Experience from './components/Experience';
 function App() {
  
   
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={
           <>
             <AboutMe></AboutMe>
+            <Experience></Experience>
             <Projects></Projects>
             <SkillsAndExperiences></SkillsAndExperiences>
             <CodingPlatforms></CodingPlatforms>

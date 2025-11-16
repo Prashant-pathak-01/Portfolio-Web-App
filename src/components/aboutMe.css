@@ -22,22 +22,66 @@
 }
 
 .details > button {
-  background-color: var(--border-color);
-  padding: 15px;
-  border: 2px solid var(--boxes-color);
-  border-radius: 7px;
-  margin: 30px;
-  font-size: 15px;
-  color: var(--text-color-a);
-  font-weight: bold;
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 13em;
+  height: 2.8em;
+  line-height: 2.5em;
+  margin: 20px;
+  margin-left: 0px;
+  position: relative;
   cursor: pointer;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  transition: 0.1s;
+  overflow: hidden;
+  border: 2px solid var(--text-color-a);
+  background-color: var(--primary-color);
+  transition: color 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--text-color-a);
+
+}
+
+.details > button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--text-color-a);
+  height: 150px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .details > button:hover {
-  transform: rotate(5deg);
+  color: var(--header-bg-color);
+}
+
+.details > button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.details > button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.details > button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+
+.details > button svg {
+  margin-right: 4px;
+  stroke: var(--text-color-a);
+  transition: stroke 0.5s;
 }
 
 .programmerImg {
@@ -50,6 +94,72 @@
   animation: 2s updown ease-in-out infinite;
 }
 
+.typing {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 50px;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ffffff;
+  animation: cursorBlink 0.7s steps(1) infinite;
+}
+
+
+@media (max-width: 700px) {
+  .aboutMe {
+    display: block;
+    width: auto;
+        margin: 10px;
+        padding: 20px;
+
+  }
+
+  .details {
+    width: 100%;
+    display: block;
+    text-align: center; 
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .details p {
+    width: 100%;
+  }
+
+  .details > button {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .programmerImg {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -60px;
+  }
+
+  .typing {
+    font-size: 25px;
+  }
+}
+
+@keyframes cursorBlink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
 @keyframes updown {
   0% {
     transform: translateY(0);
@@ -59,28 +169,5 @@
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 700px) {
-  .aboutMe {
-    display: block;
-  }
-
-  .details {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin: 20px;
-  }
-
-  .details p {
-    width: 100%;
-  }
-
-  .programmerImg {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: -60px;
   }
 }

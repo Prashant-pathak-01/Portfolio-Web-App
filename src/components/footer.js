@@ -6,11 +6,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WebsiteIcon from '@mui/icons-material/Language';
 
 import './footer.css'
-import { colors } from '@mui/material';
 function contactMe() {
   return (
     <div className='footer'>
-        <h3>Copyright © 2023 Prashant Pathak</h3>
+        <h3>Copyright © 2025 Prashant Pathak</h3>
         <div className='social-media'>
           <HorizontalRuleIcon></HorizontalRuleIcon>
           <a href='#' target='_blank'><WebsiteIcon></WebsiteIcon></a>

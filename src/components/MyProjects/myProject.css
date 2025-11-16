@@ -1,50 +1,197 @@
-.myProject{
-    background-color: var(--boxes-color);
-    margin: 60px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: 0.5s;
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--header-bg-color) 0%, var(--boxes-color) 100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid var(--header-bg-color);
+  padding: 10px;
 }
 
-.myProject:hover{
-    transform: scale(0.9);
+.card:hover {
+  transform: translateY(-8px);
 }
 
-.myProject > img{
-    height: 250px;
-    width: 250px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 10px;
-
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.myProject > p{
-    color: var(--text-color-a);
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+/* --- FRONT SIDE (Always visible) --- */
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  color: var(--text-color-a);
+}
+
+/* Image box */
+.front .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.front .img > img {
+  width: 240px;
+  height: 240px;
+  object-fit: fill;
+  border-radius: 12px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 6px 12px var(--text-color-a);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .front .img > img {
+  transform: scale(0.95);
+}
+
+/* Content under image */
+.front-content {
+  display: flex;
+  flex-direction: column;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  gap: 6px;
+  text-align: center;
+  flex-shrink: 0;
+  height:60px;
+  box-sizing: border-box;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color-a);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 1.3;
+}
+
+/* Badge */
+.badge {
+  background-color: var(--header-bg-color);
+  padding: 2px 4px;
+  border-radius: 20px;
+  font-size: 8px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+  color: var(--text-color-a);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* --- BACK/HOVER OVERLAY --- */
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--header-bg-color) 0%, var(--boxes-color) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.card:hover .back {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  height: 100%;
+  color: var(--text-color-a);
+  text-align: center;
+}
+
+.project-description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-color-a);
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--text-color-a);
+  text-decoration: none;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--text-color-a);
+  cursor: pointer;
+}
+
+.project-link:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-link i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    margin: 20px auto;
+  }
+
+  .front-content {
+    height: 48%;
+    padding: 10px 14px 14px 14px;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .project-link {
+    width: 42px;
+    height: 42px;
     font-size: 20px;
-    font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-.myProject > h4{
-    color: var(--text-color-a);
-    text-align: center;
-    padding: 20px;
-    font-weight: 200;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-@media (max-width:768px) {
-    .myProject{
-        margin: 30px;
-    }
+  }
 }

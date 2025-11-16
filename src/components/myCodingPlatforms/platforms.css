@@ -5,6 +5,8 @@
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
+
+
 }
 
 .platforms > img{
@@ -13,6 +15,7 @@
     width: 140px;
     border-radius: 20px;
     transition: 0.5s;
+    border: 2px solid var(--border-color);
 }
 
 
@@ -27,6 +30,7 @@
 
 .platforms:hover{
     transform: scale(1.2);
+    
     
 }
 
